@@ -1,212 +1,347 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <script
-      src="https://kit.fontawesome.com/74d75284c0.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta
+      name="description"
+      content="Avinash Madduru portfolio featuring SQL, Power BI, Tableau, Excel and Python data analytics projects."
+    />
+    <title>Avinash Madduru | Portfolio</title>
     <link rel="stylesheet" href="./css/index.css" />
   </head>
 
   <body>
-    <header>
-      <div class="logo">
-        <a href="#home" class="logo"><i class="fab fa-autoprefixer"></i></a>
-      </div>
-      <button class="nav-toggle" aria-label="toggle-navigation">
-        <span class="hamburger"></span>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Avinash Madduru home">
+        Avinash<span>.</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+        data-nav-toggle
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home" class="nav__link">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="#services" class="nav__link">My Services</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About me</a>
-          </li>
-          <li class="nav__item">
-            <a href="#work" class="nav__link">My work</a>
-          </li>
-        </ul>
+
+      <nav class="site-nav" id="primary-navigation" data-nav>
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </nav>
     </header>
 
-    <!--Introduction-->
-    <section class="intro" id="home">
-      <h1 class="section__title section__title--intro">
-        Hi, I am <strong>Avinash</strong>
-      </h1>
-      <p class="section__subtitle section__subtitle--intro">Data Analyst</p>
-      <img
-        src="./images/23467061_366381880455234_5959396056043332330_o.jpg"
-        alt="A picture of avinash"
-        class="intro-image"
-      />
-    </section>
+    <main>
+      <section class="hero section-panel" id="home" data-section>
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Avinash Madduru</h1>
+          <p class="hero-role">Aspiring Data Professional</p>
+          <p class="hero-text">
+            I enjoy transforming raw data into meaningful business insights
+            through SQL, Power BI, Tableau, Excel and Python.
+          </p>
+          <div class="button-row">
+            <a class="btn btn-primary ripple" href="#projects">View Projects</a>
+            <a class="btn btn-secondary ripple" href="resume.pdf" download
+              >Download Resume</a
+            >
+          </div>
+        </div>
 
-    <!--My services-->
-    <section class="my-services" id="services">
-      <h2 class="section-title section__title--services">My Services</h2>
-      <div class="services">
-        <div class="service">
-          <h3>Design + Development</h3>
+        <div class="hero-visual reveal">
+          <div class="image-shape" aria-hidden="true"></div>
+          <img
+            class="profile-image"
+            src="./images/about_meimg.jpg"
+            alt="Analytics dashboard displayed on a laptop"
+          />
+        </div>
+      </section>
+
+      <section class="skills section-panel dark-panel" id="skills" data-section>
+        <div class="section-heading reveal">
+          <p class="eyebrow">Technical Skills</p>
+          <h2>Technical Skills</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            architecto similique eum nulla possimus ut iste saepe qui odit,
-            blanditiis ipsam ipsa vel accusantium. Quos voluptatem eligendi
-            explicabo. Ut, facilis?
+            Tools and technologies I use to analyze data and create business
+            insights.
           </p>
         </div>
 
-        <div class="service">
-          <h3>Lorem Ipsum</h3>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">🗄️</span>
+            <h3>SQL</h3>
+            <ul>
+              <li>Data cleaning workflows</li>
+              <li>Joins across datasets</li>
+              <li>CTEs for readable queries</li>
+              <li>Window function analysis</li>
+              <li>GROUP BY business summaries</li>
+              <li>CASE based segmentation</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">📊</span>
+            <h3>Power BI</h3>
+            <ul>
+              <li>KPI dashboard design</li>
+              <li>DAX measures</li>
+              <li>Power Query cleaning</li>
+              <li>Data model relationships</li>
+              <li>Interactive slicers</li>
+              <li>Revenue trend reporting</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">📈</span>
+            <h3>Tableau</h3>
+            <ul>
+              <li>Visual analytics</li>
+              <li>Dashboard storytelling</li>
+              <li>Filters and parameters</li>
+              <li>Calculated fields</li>
+              <li>Trend exploration</li>
+              <li>Business presentation views</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">▦</span>
+            <h3>Excel</h3>
+            <ul>
+              <li>Pivot table reporting</li>
+              <li>Charts and dashboards</li>
+              <li>Lookup formulas</li>
+              <li>Data validation</li>
+              <li>Slicers and filters</li>
+              <li>KPI scorecards</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">{ }</span>
+            <h3>Python</h3>
+            <ul>
+              <li>Pandas data analysis</li>
+              <li>Automation scripts</li>
+              <li>Web data extraction</li>
+              <li>Data transformation</li>
+              <li>CSV workflows</li>
+              <li>Email notification logic</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="about section-panel" id="about" data-section>
+        <div class="about-copy reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>Professional About Me</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
-            natus, dolorem dignissimos id nemo quaerat autem. Assumenda tempora
-            neque labore recusandae quam dignissimos, modi tempore maxime, ea,
-            facere animi hic!
+            I am an MCA graduate passionate about
+            <strong>data analytics</strong> and business intelligence.
+          </p>
+          <p>
+            I enjoy solving analytical problems, cleaning data, building
+            dashboards and discovering insights from datasets.
+          </p>
+          <p>
+            I continuously improve my skills through real-world projects and
+            SQL practice using <strong>SQL</strong>, <strong>Power BI</strong>,
+            <strong>Tableau</strong>, <strong>Python</strong> and
+            <strong>Excel</strong>.
           </p>
         </div>
 
-        <div class="service">
-          <h3>Lorem Ipsum dolor</h3>
+        <div class="about-media reveal">
+          <img
+            src="./images/hero_intro.jpg"
+            alt="Avinash Madduru working on data analytics projects"
+          />
+          <aside class="info-card" aria-label="Portfolio information">
+            <h3>Technical Skills</h3>
+            <div class="chip-list" aria-label="Technical skills">
+              <span>SQL</span>
+              <span>Power BI</span>
+              <span>Tableau</span>
+              <span>Excel</span>
+              <span>Python</span>
+              <span>Pandas</span>
+            </div>
+            <dl>
+              <div>
+                <dt>Career Objective</dt>
+                <dd>Open to Data, Analytics & BI Roles</dd>
+              </div>
+              <div>
+                <dt>Location</dt>
+                <dd>India</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section class="stats section-panel dark-panel" aria-label="Portfolio statistics">
+        <div class="stats-grid">
+          <article class="stat-card reveal">
+            <strong data-counter data-target="6">0</strong>
+            <span>Projects Completed</span>
+          </article>
+          <article class="stat-card reveal">
+            <strong data-counter data-target="20">0</strong>
+            <span>SQL Problems Solved</span>
+          </article>
+          <article class="stat-card reveal">
+            <strong data-counter data-target="3">0</strong>
+            <span>Dashboards</span>
+          </article>
+          <article class="stat-card reveal">
+            <strong data-counter data-target="2">0</strong>
+            <span>Python Projects</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects section-panel" id="projects" data-section>
+        <div class="section-heading reveal">
+          <p class="eyebrow">Featured Projects</p>
+          <h2>Featured Projects</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea
-            reiciendis officia asperiores! Voluptas voluptates architecto
-            reiciendis assumenda animi alias maxime fuga non, voluptatem
-            corrupti quaerat, incidunt repellendus porro atque labore?
+            Projects demonstrating SQL, Business Intelligence, Dashboard
+            Development and Python Automation.
           </p>
         </div>
-      </div>
-      <!--/services-->
-      <a href="#work" class="btn">My Work</a>
-    </section>
 
-    <!--About me-->
-    <section class="about-me" id="about">
-      <h2 class="section__title section__title--about">About Me</h2>
-      <p class="section__subtitle section__subtitle--about">
-        Designer & Devoloper based in India
-      </p>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <img
+              src="./images/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg"
+              alt="Laptop displaying analytics charts for Power BI dashboard"
+            />
+            <div class="project-body">
+              <h3>Power BI Dashboard</h3>
+              <div class="badge-list">
+                <span>Power BI</span><span>DAX</span><span>Power Query</span>
+              </div>
+              <p>
+                Interactive dashboard displaying KPIs, revenue trends and
+                business insights.
+              </p>
+              <a class="project-link ripple" href="https://github.com/avinashmadduru" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-        voluptates doloremque! Praesentium voluptate quo, molestiae ab
-        dignissimos corrupti. Obcaecati consequatur explicabo reprehenderit
-        totam sequi culpa debitis labore, cumque enim fugit?
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint iste
-        veritatis aliquam delectus omnis nihil consectetur sed officia mollitia
-        quos repellat tempora veniam reiciendis nemo voluptates accusantium
-        debitis, necessitatibus porro!
-      </p>
+          <article class="project-card reveal">
+            <img
+              src="./images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg"
+              alt="Workspace representing Tableau dashboard storytelling"
+            />
+            <div class="project-body">
+              <h3>Tableau Dashboard</h3>
+              <div class="badge-list"><span>Tableau</span></div>
+              <p>Interactive dashboard for visual analytics and storytelling.</p>
+              <a class="project-link ripple" href="https://github.com/avinashmadduru" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
 
-      <div class="about-me__body">
-        <p></p>
-        <p></p>
-      </div>
+          <article class="project-card reveal">
+            <img
+              src="./images/leone-venter-VieM9BdZKFo-unsplash.jpg"
+              alt="Notebook and desk used for SQL data cleaning project"
+            />
+            <div class="project-body">
+              <h3>SQL Data Cleaning</h3>
+              <div class="badge-list"><span>SQL</span></div>
+              <p>
+                Performed cleaning, standardization and transformation using
+                joins, CTEs and string functions.
+              </p>
+              <a class="project-link ripple" href="https://github.com/avinashmadduru" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
 
-      <img
-        src="./images/ihsan-k-GSNkukTJb_8-unsplash.jpg"
-        alt="A picture of avinash"
-        class="about-me__img"
-      />
-    </section>
+          <article class="project-card reveal">
+            <img
+              src="./images/martin-adams-GCrswKdm_RQ-unsplash.jpg"
+              alt="Business analytics workspace for SQL exploratory analysis"
+            />
+            <div class="project-body">
+              <h3>SQL Exploratory Data Analysis</h3>
+              <div class="badge-list"><span>SQL</span></div>
+              <p>
+                Business analysis using GROUP BY, CASE, Window Functions and
+                CTEs.
+              </p>
+              <a class="project-link ripple" href="https://github.com/avinashmadduru" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
 
-    <!--My Work-->
-    <section class="my-work" id="work">
-      <h2 class="section__title section__title--work">My work</h2>
-      <p class="section__subtitle section__subtitle--work">
-        A selection of my range of work
-      </p>
+          <article class="project-card reveal">
+            <img
+              src="./images/brian-mcgowan-2qkhvkO2CaA-unsplash.jpg"
+              alt="Spreadsheet dashboard visual for Excel analytics project"
+            />
+            <div class="project-body">
+              <h3>Excel Dashboard</h3>
+              <div class="badge-list">
+                <span>Excel</span><span>Pivot Tables</span><span>Charts</span>
+              </div>
+              <p>Business dashboard with slicers and KPI reporting.</p>
+              <a class="project-link ripple" href="https://github.com/avinashmadduru" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
 
-      <!--portfolio-->
-      <div class="portfolio">
-        <a href="#" class="portfolio__item">
-          <img
-            src="./images/brian-mcgowan-2qkhvkO2CaA-unsplash.jpg"
-            alt=""
-            class="portfolio__img"
-          />
-        </a>
+          <article class="project-card reveal">
+            <img
+              src="./images/mubariz-mehdizadeh-t3zrEm88ehc-unsplash.jpg"
+              alt="Laptop showing code for Amazon price tracking automation"
+            />
+            <div class="project-body">
+              <h3>Amazon Price Tracker</h3>
+              <div class="badge-list">
+                <span>Python</span><span>BeautifulSoup</span><span>SMTP</span>
+              </div>
+              <p>Automated Amazon price monitoring with email notifications.</p>
+              <a class="project-link ripple" href="https://github.com/avinashmadduru" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </section>
 
-        <a href="#" class="portfolio__item">
-          <img
-            src="./images/marcella-marcella-BXR9wvl29J8-unsplash.jpg"
-            alt=""
-            class="portfolio__img"
-          />
-        </a>
+      <section class="contact section-panel dark-panel" id="contact" data-section>
+        <div class="section-heading reveal">
+          <p class="eyebrow">Let's Connect</p>
+          <h2>Let's Connect</h2>
+          <p>
+            I'm always open to discussing data, analytics and BI opportunities and
+            collaborations.
+          </p>
+        </div>
 
-        <a href="#" class="portfolio__item">
-          <img
-            src="./images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg"
-            alt=""
-            class="portfolio__img"
-          />
-        </a>
+        <div class="contact-actions reveal">
+          <a class="contact-btn ripple" href="mailto:avinashmaduru26@gmail.com">Email</a>
+          <a class="contact-btn ripple" href="https://github.com/avinashmadduru" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="contact-btn ripple" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="contact-btn ripple" href="resume.pdf" download>Resume</a>
+        </div>
+      </section>
+    </main>
 
-        <a href="#" class="portfolio__item">
-          <img
-            src="./images/lauren-mancke-aOC7TSLb1o8-unsplash.jpg"
-            alt=""
-            class="portfolio__img"
-          />
-        </a>
-
-        <a href="#" class="portfolio__item">
-          <img
-            src="./images/leone-venter-VieM9BdZKFo-unsplash.jpg"
-            alt=""
-            class="portfolio__img"
-          />
-        </a>
-
-        <a href="#" class="portfolio__item">
-          <img
-            src="./images/lum3n--RBuQ2PK_L8-unsplash.jpg"
-            alt=""
-            class="portfolio__img"
-          />
-        </a>
-      </div>
-    </section>
-
-    <!--footer-->
-    <footer>
-      <a href="mailto:avinashmaduru26@gmail.com" class="footer__link"
-        >hello@avinash.dev</a
-      >
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a href="https://www.facebook.com/" class="social-list__link"
-            ><i class="fab fa-facebook"></i
-          ></a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://www.google.com/" class="social-list__link"
-            ><i class="fab fa-google"></i
-          ></a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://www.instagram.com/" class="social-list__link"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </li>
-        <li class="social-list__item">
-          <a href="https://www.tumblr.com/" class="social-list__link"
-            ><i class="fab fa-github"></i
-          ></a>
-        </li>
-      </ul>
+    <footer class="site-footer">
+      <p>Copyright 2026 Avinash Madduru | Portfolio</p>
     </footer>
 
     <script src="./js/index.js"></script>
