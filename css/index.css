@@ -448,7 +448,10 @@ h3 {
   border-radius: 50%;
   background: var(--accent);
 }
-
+.about_me_img{
+  width: 25rem;
+  height: 25rem;
+}
 .about {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 430px);
@@ -468,6 +471,10 @@ h3 {
 
 .about-copy strong {
   color: var(--accent-dark);
+}
+
+.about-copy{
+  max-width: 50rem;
 }
 
 .about-media {
